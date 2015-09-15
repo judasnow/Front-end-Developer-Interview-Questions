@@ -25,17 +25,49 @@ This file contains a number of front-end interview questions that can be used wh
 #### General Questions:
 
 * What did you learn yesterday/this week?
+    some new pls. such as rust, haskell
+
 * What excites or interests you about coding?
+    some problems that real complex.
+
 * What is a recent technical challenge you experienced and how did you solve it?
+    no
+
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
+    UI reuseable, add slash, aync load ui, etc..
+
 * Talk about your preferred development environment.
+    Mac vargent ubuntu vim git zsh chrome
+
 * Which version control systems are you familiar with?
+    git svn
+
 * Can you describe your workflow when you create a web page?
+    study the ui, name pages and some common fields,
+    then I will create some basic dirs
+    write the config files
+    create the index page
+    test
+
 * If you have 5 different stylesheets, how would you best integrate them into the site?
+    by ui
+
 * Can you describe the difference between progressive enhancement and graceful degradation?
+
+    Progressive Enhancement consists of the following core principles:
+        basic content should be accessible to all web browsers
+        basic functionality should be accessible to all web browsers
+        sparse, semantic markup contains all content
+        enhanced layout is provided by externally linked CSS
+        enhanced behavior is provided by unobtrusive, externally linked JavaScript
+        end-user web browser preferences are respected
+
+    Graceful degradation means that your Web site continues to operate even when viewed with
+    less-than-optimal software in which advanced effects don’t work.
+
 * How would you optimize a website's assets/resources?
 * How many resources will a browser download from a given domain at a time?
-  * What are the exceptions?
+* What are the exceptions?
 * Name 3 ways to decrease page load (perceived or actual load time).
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
 * Describe how you would create a simple slideshow page.
