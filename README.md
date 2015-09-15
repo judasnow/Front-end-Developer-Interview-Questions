@@ -53,6 +53,7 @@ This file contains a number of front-end interview questions that can be used wh
     by ui
 
 * Can you describe the difference between progressive enhancement and graceful degradation?
+    1 http://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement
 
     Progressive Enhancement consists of the following core principles:
         basic content should be accessible to all web browsers
@@ -66,10 +67,20 @@ This file contains a number of front-end interview questions that can be used wh
     less-than-optimal software in which advanced effects don’t work.
 
 * How would you optimize a website's assets/resources?
+    webpack bundle some common libs, use cdn.
+
 * How many resources will a browser download from a given domain at a time?
+    并发数并不是绝对的2，IE6-7为2，IE8、Firefox、Chrome为6，Opera为16
+
 * What are the exceptions?
+    exceptions is some exception that occur in runtime.
+
 * Name 3 ways to decrease page load (perceived or actual load time).
+    bundle some files to one, spirtimg, uglifily script, async load ui.
+
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
+    Be a nice man.
+
 * Describe how you would create a simple slideshow page.
 * If you could master one technology this year, what would it be?
 * Explain the importance of standards and standards bodies.
@@ -133,13 +144,24 @@ This file contains a number of front-end interview questions that can be used wh
 #### JS Questions:
 
 * Explain event delegation
+    时间代理，在事件传递的过程中根据元素触发事件。
+
 * Explain how `this` works in JavaScript
+    调用这个方法的对象，如果是顶层就是全局变量 比如 window，或者是 node 中的 global
+
 * Explain how prototypal inheritance works
+    属性查找机制，在本对象找，没有就找 proto 依次向上直到 undefined 
+    @XXX 基本对象是什么 ???
+
 * What do you think of AMD vs CommonJS?
+    模块化的两中尝试，个人比较 perfer AMD.
+
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-  * What needs to be changed to properly make it an IIFE?
+    () 优先级高
+
+* What needs to be changed to properly make it an IIFE?
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
+* How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
 * What's a typical use case for anonymous functions?
 * How do you organize your code? (module pattern, classical inheritance?)
